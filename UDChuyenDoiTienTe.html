@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <link rel="stylesheet"  type="text/css" href="UDChuyenDoiTienTe.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th><label for="sotienmuondoi"><b>Amount</b></label></th>
+        <th><b>From Currency</b></th>
+        <th><b>To Currency</b></th>
+    </tr>
+    <tr>
+        <td><input  type="text" id="sotienmuondoi"></td>
+        <td>
+            <select class="select" id="donvitiengoc">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select class="select" id="donvidoi">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td><button onclick="exchange()">Convert</button></td>
+    </tr>
+</table>
+<p id="kq"></p>
+<script src="UDChuyenDoiTienTe.js"></script>
+</body>
+</html>
